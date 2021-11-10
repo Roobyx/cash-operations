@@ -1,0 +1,28 @@
+{
+	"name": "poc",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"build": "npx eslint ./src/ && babel ./src/ -d dist",
+		"calc": "node ./dist/app.js",
+		"dev": "nodemon",
+		"tests": "jest"
+	},
+	"keywords": [],
+	"author": "Marian Radev",
+	"license": "MIT",
+	"dependencies": {
+		"luxon": "^2.1.1"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.16.0",
+		"@babel/core": "^7.16.0",
+		"babel-preset-airbnb": "^5.0.0",
+		"eslint": "^8.2.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.25.3",
+		"jest": "^27.3.1",
+		"nodemon": "^2.0.15"
+	}
+}
